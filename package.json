@@ -1,0 +1,30 @@
+{
+  "name": "community-templates",
+  "version": "1.0.0",
+  "description": "AetherZen Community Templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AetherZen/community-templates.git"
+  },
+  "author": "KiraanRK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AetherZen/community-templates/issues"
+  },
+  "homepage": "https://github.com/AetherZen/community-templates#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-html5-lint": "^1.1.0",
+    "gulp-sass": "^3.2.1",
+    "run-sequence": "^2.2.1",
+    "vinyl-paths": "^2.1.0"
+  },
+  "dependencies": {
+    "gulp-html-lint": "0.0.2"
+  }
+}

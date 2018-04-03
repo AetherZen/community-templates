@@ -18,7 +18,7 @@ gulp.task('clean', function() {
   Compile sass into CSS
  */
 gulp.task('sass', function() {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./sass/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('dist'));
 });

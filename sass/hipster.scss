@@ -16,8 +16,8 @@ $highlight-color: $color4;
 // font-family: 'Niconne', cursive;
 // Body
 // font-family: 'Josefin Sans', sans-serif;
-
 body {
+  margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
   color: rgba(0, 0, 0, .7);
@@ -79,6 +79,8 @@ h3 {
 .sidebar {
   color: $help-color;
   background-color: $color5;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .sidebar:visited {
@@ -89,3 +91,7 @@ h3 {
   visibility: hidden;
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}

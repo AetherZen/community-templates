@@ -23,7 +23,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('dist'));
 });
 
-
 gulp.task('html5', function() {
   return gulp.src('./src/**/*.html')
     .pipe(htmlLint())

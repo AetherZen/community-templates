@@ -10,3 +10,27 @@ $focus-color: $color1;
 $bg-primary: $color2;
 $help-color: $color3;
 $highlight-color: $color4;
+
+@import 'base';
+
+
+h1 {
+  color: $focus-color;
+}
+
+h3 {
+  color: $highlight-color;
+}
+
+.bg-main {
+  background-color: $bg-primary;
+}
+
+.sidebar {
+  color: $help-color;
+  background-color: $color5;
+}
+
+.sidebar:visited {
+  color: red;
+}

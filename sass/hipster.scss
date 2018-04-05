@@ -16,56 +16,15 @@ $highlight-color: $color4;
 // font-family: 'Niconne', cursive;
 // Body
 // font-family: 'Josefin Sans', sans-serif;
-body {
-  margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
-  color: rgba(0, 0, 0, .7);
-}
 
-strong,
-b {
-  font-weight: bold;
-}
-
-h1,
-h2,
-h3 {
-  text-rendering: optimizeLegibility;
-}
+@import 'base';
 
 h1 {
-  font-family: 'Cinzel', serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  font-size: 6vw;
-  letter-spacing: .09em;
-  line-height: .86em;
   color: $focus-color;
-  text-transform: uppercase;
-  padding-top: 0.5em;
-}
-
-h2 {
-  font-style: italic;
-  font-size: 25px;
-  font-size: 3vw;
 }
 
 h3 {
   color: $highlight-color;
-  font-family: 'Niconne', cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  letter-spacing: .15em;
-  line-height: 1.09em;
-  padding-top: 0.1em;
-}
-
-.text-align-center {
-  text-align: center;
 }
 
 .bg-main {
@@ -79,19 +38,8 @@ h3 {
 .sidebar {
   color: $help-color;
   background-color: $color5;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .sidebar:visited {
   color: red;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
 }

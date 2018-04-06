@@ -4,22 +4,53 @@
   grid-template-columns: auto;
 }
 
-.blog-title {
-  font-size: 5vw;
-  text-align: center; // margin-bottom: 16px;
+.blog-header {
   padding-bottom: 4px;
   border-bottom: solid black 1px;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+}
+
+.blog-title {
+  text-align: center;
+  display: inline;
+  font-size: 5vw;
+}
+
+.blog-header-left {}
+
+.blog-header-right {
+  position: absolute;
+  right: 8px;
 }
 
 .blog-card {
-  border: solid black 1px;
+  // border: solid black 1px;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.45);
   padding: 4px;
   margin-bottom: 16px;
 }
 
-.blog-card h3 {
+.blog-card-header {
   margin: 0 0 .25em;
+}
+
+.blog-card-title {
+  font-size: 1.17em;
+  font-weight: bold;
+  display: inline;
+}
+
+.blog-card-author {
+  display: inline;
+  float: right;
+  font-style: italic;
+}
+
+.blog-card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(4em + 8px);
 }
 
 .blog-card p {
@@ -29,8 +60,40 @@
 .sidebar {
   border: solid black 1px;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.45);
-  padding: 4px; 
+  padding: 4px;
   margin-bottom: 16px;
+}
+
+.sidebar h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.article-categories {}
+
+.article-categories div:first-child {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.article-categories div {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.article-categories div:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.fa {
+  font-size: 2vw;
+  margin: .1em;
 }
 
 // Larger phones
@@ -39,7 +102,7 @@
     grid-template-columns: auto 30%;
   }
 
-  .blog-title {
+  .blog-header {
     grid-column-start: 1;
     grid-column-end: 3;
   }
